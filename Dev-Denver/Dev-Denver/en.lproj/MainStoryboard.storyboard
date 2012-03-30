@@ -6,7 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--Speakers Table View Controller-->
+        <!--Speakers Table View Controller - Speakers-->
         <scene sceneID="k42-AB-qQo">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dN-cs-2tY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="drew-thumb.png" id="jJ0-xs-5R6">
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" image="drew-thumb.png" id="jJ0-xs-5R6">
                                             <rect key="frame" x="9" y="6" width="76" height="79"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -51,7 +51,7 @@
                             <outlet property="delegate" destination="uB7-Ct-MBY" id="gsT-BQ-Bch"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="pbI-yN-GcJ"/>
+                    <navigationItem key="navigationItem" title="Speakers" id="pbI-yN-GcJ"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="763" y="-334"/>
@@ -105,12 +105,12 @@
             </objects>
             <point key="canvasLocation" x="-295" y="-40"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Speakers-->
         <scene sceneID="56B-zu-h4M">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5K-ac-FNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="1c8-mM-f0Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XCd-Ai-Kt7"/>
+                    <tabBarItem key="tabBarItem" title="Speakers" image="speakers-tab-bar-item.png" id="XCd-Ai-Kt7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="lNO-AZ-jD5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -124,12 +124,12 @@
             </objects>
             <point key="canvasLocation" x="237" y="-334"/>
         </scene>
-        <!--Navigation Controller - Item 2-->
+        <!--Navigation Controller - Sponsors-->
         <scene sceneID="1Yt-n2-hcd">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HX9-sc-ij7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="1y0-bZ-gK4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="0rD-ug-ro6"/>
+                    <tabBarItem key="tabBarItem" title="Sponsors" image="sponsors-tab-bar-item.png" id="0rD-ug-ro6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wX1-4m-0Ll">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -148,6 +148,8 @@
         <image name="cell-background-selected.png" width="320" height="93"/>
         <image name="cell-background.png" width="320" height="93"/>
         <image name="drew-thumb.png" width="76" height="79"/>
+        <image name="speakers-tab-bar-item.png" width="35" height="35"/>
+        <image name="sponsors-tab-bar-item.png" width="35" height="35"/>
     </resources>
     <classes>
         <class className="DDSpeakersTableViewController" superclassName="UITableViewController">
