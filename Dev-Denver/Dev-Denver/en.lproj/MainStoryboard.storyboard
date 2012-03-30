@@ -22,6 +22,16 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cell-background.png" highlightedImage="cell-background-selected.png" id="i9P-bT-ckW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="drew-thumb.png" id="jJ0-xs-5R6">
+                                            <rect key="frame" x="9" y="6" width="76" height="79"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
@@ -127,6 +137,11 @@
             <point key="canvasLocation" x="239" y="243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cell-background-selected.png" width="320" height="93"/>
+        <image name="cell-background.png" width="320" height="93"/>
+        <image name="drew-thumb.png" width="76" height="79"/>
+    </resources>
     <classes>
         <class className="DDSpeakersTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DDSpeakersTableViewController.h"/>
