@@ -56,14 +56,38 @@
             </objects>
             <point key="canvasLocation" x="763" y="-334"/>
         </scene>
-        <!--View Controller-->
+        <!--Speaker View Controller-->
         <scene sceneID="IIq-gP-DYh">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTU-Q0-g7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="fRm-bb-2br" sceneMemberID="viewController">
+                <viewController id="fRm-bb-2br" customClass="DDSpeakerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pEF-fZ-TE4">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speaker-detail-bg.jpg" id="Tgc-Vy-u8h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="412"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Description" id="eKa-fc-tL4">
+                                <rect key="frame" x="22" y="244" width="264" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Organization" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="F5l-nN-ck0">
+                                <rect key="frame" x="29" y="227" width="172" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.85098039219999999" green="0.16078431369999999" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="dnG-6g-Lif">
+                                <rect key="frame" x="34" y="25" width="250" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8B7-g3-4hQ"/>
@@ -148,10 +172,19 @@
         <image name="cell-background-selected.png" width="320" height="93"/>
         <image name="cell-background.png" width="320" height="93"/>
         <image name="drew-thumb.png" width="76" height="79"/>
+        <image name="speaker-detail-bg.jpg" width="320" height="412"/>
         <image name="speakers-tab-bar-item.png" width="35" height="35"/>
         <image name="sponsors-tab-bar-item.png" width="35" height="35"/>
     </resources>
     <classes>
+        <class className="DDSpeakerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DDSpeakerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="descriptionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="organizationLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="DDSpeakersTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DDSpeakersTableViewController.h"/>
         </class>
