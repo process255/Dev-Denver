@@ -42,7 +42,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="fRm-bb-2br" kind="push" id="eT5-iK-Phs"/>
+                                    <segue destination="fRm-bb-2br" kind="push" identifier="ShowSpeaker" id="eT5-iK-Phs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -91,6 +91,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8B7-g3-4hQ"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="eKa-fc-tL4" id="vc3-Ps-Hqn"/>
+                        <outlet property="imageView" destination="dnG-6g-Lif" id="Hq5-Sm-gXD"/>
+                        <outlet property="organizationLabel" destination="F5l-nN-ck0" id="bEF-YJ-e0P"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1234" y="-335"/>
