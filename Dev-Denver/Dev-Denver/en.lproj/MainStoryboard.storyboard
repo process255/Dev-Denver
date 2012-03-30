@@ -100,7 +100,7 @@
             </objects>
             <point key="canvasLocation" x="1234" y="-335"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Sponsors-->
         <scene sceneID="Ixp-ua-yYq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95a-QL-She" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,9 +108,15 @@
                     <view key="view" contentMode="scaleToFill" id="tf6-TI-Ukk">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="desk.png" id="y4B-vY-mDc">
+                                <rect key="frame" x="86" y="152" width="148" height="64"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="glM-11-aaz"/>
+                    <navigationItem key="navigationItem" title="Sponsors" id="glM-11-aaz"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="765" y="243"/>
@@ -176,6 +182,7 @@
     <resources>
         <image name="cell-background-selected.png" width="320" height="93"/>
         <image name="cell-background.png" width="320" height="93"/>
+        <image name="desk.png" width="148" height="64"/>
         <image name="drew-thumb.png" width="76" height="79"/>
         <image name="speaker-detail-bg.jpg" width="320" height="412"/>
         <image name="speakers-tab-bar-item.png" width="35" height="35"/>
