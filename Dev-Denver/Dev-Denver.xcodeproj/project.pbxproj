@@ -45,6 +45,7 @@
 		C63BC2CE1525614700B8E122 /* tabbar-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63BC2A81525614700B8E122 /* tabbar-item@2x.png */; };
 		C63BC2CF1525614700B8E122 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = C63BC2A91525614700B8E122 /* tabbar.png */; };
 		C63BC2D01525614700B8E122 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63BC2AA1525614700B8E122 /* tabbar@2x.png */; };
+		C63BC2D3152563D900B8E122 /* DDSpeakersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BC2D2152563D900B8E122 /* DDSpeakersTableViewController.m */; };
 		C683552A15250ACC00AF4DAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683552915250ACC00AF4DAC /* UIKit.framework */; };
 		C683552C15250ACC00AF4DAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683552B15250ACC00AF4DAC /* Foundation.framework */; };
 		C683552E15250ACC00AF4DAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683552D15250ACC00AF4DAC /* CoreGraphics.framework */; };
@@ -98,6 +99,8 @@
 		C63BC2A81525614700B8E122 /* tabbar-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-item@2x.png"; sourceTree = "<group>"; };
 		C63BC2A91525614700B8E122 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		C63BC2AA1525614700B8E122 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		C63BC2D1152563D900B8E122 /* DDSpeakersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSpeakersTableViewController.h; sourceTree = "<group>"; };
+		C63BC2D2152563D900B8E122 /* DDSpeakersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSpeakersTableViewController.m; sourceTree = "<group>"; };
 		C683552515250ACC00AF4DAC /* Dev-Denver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev-Denver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C683552915250ACC00AF4DAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C683552B15250ACC00AF4DAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -211,9 +214,11 @@
 		C683552F15250ACC00AF4DAC /* Dev-Denver */ = {
 			isa = PBXGroup;
 			children = (
+				C683553B15250ACC00AF4DAC /* MainStoryboard.storyboard */,
 				C683553815250ACC00AF4DAC /* DDAppDelegate.h */,
 				C683553915250ACC00AF4DAC /* DDAppDelegate.m */,
-				C683553B15250ACC00AF4DAC /* MainStoryboard.storyboard */,
+				C63BC2D1152563D900B8E122 /* DDSpeakersTableViewController.h */,
+				C63BC2D2152563D900B8E122 /* DDSpeakersTableViewController.m */,
 				C683553E15250ACC00AF4DAC /* DDSpeakerViewController.h */,
 				C683553F15250ACC00AF4DAC /* DDSpeakerViewController.m */,
 				C683553015250ACC00AF4DAC /* Supporting Files */,
@@ -341,6 +346,7 @@
 				C683553615250ACC00AF4DAC /* main.m in Sources */,
 				C683553A15250ACC00AF4DAC /* DDAppDelegate.m in Sources */,
 				C683554015250ACC00AF4DAC /* DDSpeakerViewController.m in Sources */,
+				C63BC2D3152563D900B8E122 /* DDSpeakersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

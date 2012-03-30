@@ -1,34 +1,37 @@
-//
-//  DDViewController.m
-//  Dev-Denver
-//
-//  Created by Sean Dougherty on 3/29/12.
-//  Copyright (c) 2012 process255, LLC. All rights reserved.
-//
-
 #import "DDSpeakerViewController.h"
 
+// private properties
 @interface DDSpeakerViewController ()
-
+@property(nonatomic, retain) IBOutlet UILabel *organizationLabel;
+@property(nonatomic, retain) IBOutlet UIImageView *imageView;
+@property(nonatomic, retain) IBOutlet UITextView *descriptionTextView;
 @end
 
 @implementation DDSpeakerViewController
 
-- (void)viewDidLoad
-{
+@synthesize organizationLabel   = _organizationLabel;
+@synthesize name                = _name;
+@synthesize organization        = _organization;
+@synthesize imagePath           = _imagePath;
+@synthesize description         = _description;
+@synthesize imageView           = _imageView;
+@synthesize descriptionTextView = _descriptionTextView;
+
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // set the name
+    self.organizationLabel.text = self.organization; 
+    
+    // set the nav bar title
+    self.title = self.name;
+    
+    // set the image
+    self.imageView.image = [UIImage imageNamed:self.imagePath]; 
+    
+    // set the description
+    self.descriptionTextView.text = self.description; 
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
 
 @end
