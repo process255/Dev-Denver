@@ -2,9 +2,8 @@
 
 ###from designs to iPhone
 
-Sean Dougherty
+Sean Dougherty - March 30th, 2012
 
-March 30th, 2012
 
 This project is the code, psd, tutorial and tutorial images for a hands on working presentation on iOS development.
 
