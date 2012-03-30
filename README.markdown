@@ -1,6 +1,6 @@
-##iOS 101
+##iOS 101 - from designs to iPhone
 
-###from designs to iPhone
+###http://www.developdenver.org
 
 Sean Dougherty - March 30th, 2012
 
